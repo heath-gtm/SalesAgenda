@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(248, 20%, 98%);
+  --foreground: hsl(210, 25%, 7.8431%);
+  --card: hsl(248, 20%, 98%);
+  --card-foreground: hsl(210, 25%, 7.8431%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(210, 25%, 7.8431%);
+  --primary: hsl(204, 88%, 53%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(210, 25%, 7.8431%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(210, 2%, 90%);
+  --muted-foreground: hsl(210, 25%, 7.8431%);
+  --accent: hsl(211, 51%, 93%);
+  --accent-foreground: hsl(204, 88%, 53%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(201, 30%, 91%);
+  --input: hsl(200, 23%, 97%);
+  --ring: hsl(203, 89%, 53%);
+  --chart-1: hsl(204, 88%, 53%);
+  --chart-2: hsl(160, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(248, 20%, 98%);
+  --sidebar-foreground: hsl(210, 25%, 7.8431%);
+  --sidebar-primary: hsl(204, 88%, 53%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(211, 51%, 93%);
+  --sidebar-accent-foreground: hsl(204, 88%, 53%);
+  --sidebar-border: hsl(205, 25%, 91%);
+  --sidebar-ring: hsl(203, 89%, 53%);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 1px 2px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 1px 2px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 2px 4px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 4px 6px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 8px 10px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+  
+  /* Custom color variables for sales planner */
+  --primary-50: hsl(205, 100%, 95%);
+  --primary-100: hsl(205, 92%, 88%);
+  --primary-500: hsl(204, 88%, 53%);
+  --primary-600: hsl(204, 88%, 47%);
+  --primary-700: hsl(204, 88%, 40%);
+  
+  --slate-50: hsl(210, 20%, 98%);
+  --slate-100: hsl(210, 17%, 95%);
+  --slate-200: hsl(214, 15%, 91%);
+  --slate-300: hsl(213, 14%, 83%);
+  --slate-400: hsl(215, 14%, 71%);
+  --slate-500: hsl(215, 16%, 47%);
+  --slate-600: hsl(215, 19%, 35%);
+  --slate-700: hsl(215, 25%, 27%);
+  --slate-800: hsl(217, 33%, 17%);
+  
+  --success-50: hsl(120, 60%, 97%);
+  --success-100: hsl(120, 75%, 94%);
+  --success-500: hsl(142, 71%, 45%);
+  --success-600: hsl(142, 76%, 36%);
+  --success-700: hsl(142, 72%, 29%);
+  
+  --warning-50: hsl(48, 100%, 96%);
+  --warning-100: hsl(48, 96%, 89%);
+  --warning-500: hsl(32, 95%, 44%);
+  --warning-600: hsl(25, 95%, 53%);
+  --warning-700: hsl(25, 95%, 39%);
+  
+  --error-50: hsl(360, 100%, 97%);
+  --error-100: hsl(360, 100%, 94%);
+  --error-200: hsl(360, 100%, 87%);
+  --error-500: hsl(356, 91%, 54%);
+  --error-600: hsl(356, 84%, 47%);
+  --error-700: hsl(356, 75%, 40%);
+}
+
+.dark {
+  --background: hsl(217, 33%, 17%);
+  --foreground: hsl(200, 7%, 91%);
+  --card: hsl(228, 10%, 10%);
+  --card-foreground: hsl(0, 0%, 85%);
+  --popover: hsl(217, 33%, 17%);
+  --popover-foreground: hsl(200, 7%, 91%);
+  --primary: hsl(204, 88%, 53%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(195, 15%, 95%);
+  --secondary-foreground: hsl(210, 25%, 7.8431%);
+  --muted: hsl(0, 0%, 9%);
+  --muted-foreground: hsl(210, 3%, 46%);
+  --accent: hsl(206, 70%, 8%);
+  --accent-foreground: hsl(204, 88%, 53%);
+  --destructive: hsl(356, 91%, 54%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(210, 5%, 15%);
+  --input: hsl(208, 28%, 18%);
+  --ring: hsl(203, 89%, 53%);
+  --chart-1: hsl(204, 88%, 53%);
+  --chart-2: hsl(160, 100%, 36%);
+  --chart-3: hsl(42, 93%, 56%);
+  --chart-4: hsl(147, 79%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(228, 10%, 10%);
+  --sidebar-foreground: hsl(0, 0%, 85%);
+  --sidebar-primary: hsl(203, 89%, 53%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(206, 70%, 8%);
+  --sidebar-accent-foreground: hsl(204, 88%, 53%);
+  --sidebar-border: hsl(206, 16%, 26%);
+  --sidebar-ring: hsl(203, 89%, 53%);
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 1px 2px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 1px 2px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 2px 4px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 4px 6px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00), 0px 8px 10px -1px hsl(203, 89%, 53% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(203, 89%, 53% / 0.00);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  
+  /* Custom scrollbar styles */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--border));
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.3);
+  }
+}
+
+@layer components {
+  /* Professional color classes for meetings and time blocks */
+  .meeting-demo {
+    @apply bg-green-50 border-green-200 dark:bg-green-950 dark:border-green-800;
+  }
+  
+  .meeting-discovery {
+    @apply bg-blue-50 border-blue-200 dark:bg-blue-950 dark:border-blue-800;
+  }
+  
+  .meeting-follow-up {
+    @apply bg-orange-50 border-orange-200 dark:bg-orange-950 dark:border-orange-800;
+  }
+  
+  .meeting-competitive {
+    @apply bg-red-50 border-red-200 dark:bg-red-950 dark:border-red-800;
+  }
+  
+  .timeblock-prospecting {
+    @apply bg-blue-50 border-l-4 border-l-blue-500 dark:bg-blue-950 dark:border-l-blue-400;
+  }
+  
+  .timeblock-admin {
+    @apply bg-slate-100 border-l-4 border-l-slate-400 dark:bg-slate-800 dark:border-l-slate-500;
+  }
+  
+  .timeblock-prep {
+    @apply bg-orange-50 border-l-4 border-l-orange-500 dark:bg-orange-950 dark:border-l-orange-400;
+  }
+}
+
+@layer utilities {
+  /* Print styles */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    
+    .print-area {
+      position: static !important;
+      width: 100% !important;
+      visibility: visible !important;
+    }
+    
+    body {
+      font-size: 12pt;
+      line-height: 1.4;
+    }
+    
+    h1, h2, h3 {
+      page-break-after: avoid;
+    }
+    
+    .timeline-item, .action-item {
+      page-break-inside: avoid;
+    }
+  }
+}

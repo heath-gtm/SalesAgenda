@@ -1,0 +1,176 @@
+Based on your sales agenda documents, here's a comprehensive prompt for Replit.com to create a web application:
+
+---
+
+# **Sales Day Planner Web Application**
+
+## **Project Overview**
+Create a modern web application that helps sales professionals plan and manage their daily sales activities. The app should allow users to organize meetings, track prospects, manage follow-ups, and optimize their time between selling activities and prospecting.
+
+## **Core Features Required**
+
+### 1. **Meeting Management**
+- Add/edit/delete meetings with time slots
+- Include fields for:
+  - Company name and website
+  - Contact name(s) and LinkedIn profiles
+  - Meeting type (Demo, Discovery, Follow-up, etc.)
+  - Company size and revenue
+  - Current tools/tech stack
+  - Meeting agenda/notes
+
+### 2. **Prospect Intelligence Section**
+For each meeting, provide sections for:
+- Company overview and business model
+- Industry context and pain points
+- Competitive landscape
+- Key stakeholder information
+- Opportunity areas specific to our product
+
+### 3. **Discovery Questions Generator**
+- Pre-populate 5 smart discovery questions based on:
+  - Company type and industry
+  - Meeting stage (first call, demo, etc.)
+  - Known pain points
+  - Competitive situation
+
+### 4. **Time Blocking System**
+- Visual calendar/timeline view of the day
+- Suggested time blocks for:
+  - Meeting prep (15-30 min before each meeting)
+  - Post-meeting follow-up (30 min after)
+  - Prospecting blocks (morning and evening)
+  - Deal management windows
+  - Admin time
+
+### 5. **Action Items & Follow-ups**
+- Checklist for each meeting:
+  - Pre-meeting research tasks
+  - Post-meeting action items
+  - Follow-up email templates
+  - Next steps tracking
+- Daily summary checklist
+
+### 6. **Prospecting Planner**
+- Track daily/weekly prospecting goals:
+  - New prospects to add
+  - LinkedIn connections to make
+  - Warm introductions to request
+  - Companies to research
+
+### 7. **Competitive Intelligence**
+- Note which competitors are in play
+- Suggested positioning strategies
+- Win/loss reasons tracking
+
+## **Technical Requirements**
+
+### **Frontend:**
+- Clean, professional UI with a dashboard view
+- Responsive design for desktop and mobile
+- Drag-and-drop to reorganize meetings
+- Color coding for meeting types and priorities
+- Print-friendly view for daily agenda
+
+### **Backend/Storage:**
+- User authentication system
+- Save multiple day plans
+- Export to PDF or calendar formats
+- Integration-ready for CRM systems (future feature)
+- Search and filter past meetings/contacts
+
+### **Data Structure Example:**
+```javascript
+{
+  "date": "2025-07-09",
+  "meetings": [
+    {
+      "time": "9:30 AM",
+      "duration": 60,
+      "company": "Emplifi",
+      "type": "demo",
+      "attendees": ["Jenna Colombe", "..."],
+      "priority": "high",
+      "competitiveSituation": "Outreach",
+      "dealSize": "$50K+",
+      "painPoints": ["user adoption", "complexity"],
+      "discoveryQuestions": [],
+      "followUpActions": []
+    }
+  ],
+  "timeBlocks": {
+    "prospecting": ["7:00-8:00 AM", "9:00-10:00 PM"],
+    "dealManagement": ["10:30-11:00 AM", "4:30-5:00 PM"]
+  },
+  "dailyGoals": {
+    "newProspects": 5,
+    "linkedInConnections": 10,
+    "followUpMeetings": 3
+  }
+}
+```
+
+## **UI/UX Guidelines**
+
+1. **Dashboard Layout:**
+   - Left sidebar: Navigation and quick add buttons
+   - Center: Timeline view of the day
+   - Right panel: Meeting details and intelligence
+
+2. **Color Scheme:**
+   - Use professional colors (blues, grays)
+   - Red flags for competitive situations
+   - Green for opportunities
+   - Orange for follow-up required
+
+3. **Key Interactions:**
+   - Quick add meeting with minimal required fields
+   - Auto-suggestions based on company/contact data
+   - One-click to mark tasks complete
+   - Bulk actions for common tasks
+
+## **Starter Features (MVP)**
+Start with:
+1. Basic meeting scheduler with notes
+2. Simple timeline view
+3. Discovery questions library
+4. Daily checklist
+5. Export to PDF
+
+## **Advanced Features (Future)**
+- CRM integration (Salesforce, HubSpot)
+- AI-powered discovery question suggestions
+- Meeting recording transcription
+- Email automation
+- Team collaboration features
+- Analytics and reporting
+
+## **Sample User Flow**
+1. User logs in and sees today's agenda
+2. Clicks "Add Meeting" and enters basic details
+3. App suggests discovery questions and prep tasks
+4. User views timeline and adjusts time blocks
+5. After meetings, checks off follow-up tasks
+6. Reviews prospecting goals and updates progress
+7. Exports daily summary or plans tomorrow
+
+## **Technology Stack Suggestion**
+- **Frontend:** React or Vue.js with Tailwind CSS
+- **Backend:** Node.js with Express
+- **Database:** PostgreSQL or MongoDB
+- **Authentication:** JWT or Auth0
+- **Hosting:** Deploy on Replit
+
+## **Success Metrics**
+The app should help users:
+- Reduce meeting prep time by 50%
+- Never miss a follow-up
+- Consistently hit prospecting targets
+- Improve meeting conversion rates
+- Better manage their sales pipeline
+
+Please create a clean, intuitive web application that makes it easy for sales professionals to plan their day, prepare for meetings, and track all necessary follow-up actions. The app should feel like a smart assistant that helps optimize every selling moment.
+
+---
+
+This prompt provides Replit with clear requirements, technical specifications, and examples to build a comprehensive sales planning application based on your agenda structure. The app will help systematize the detailed planning approach shown in your documents.
